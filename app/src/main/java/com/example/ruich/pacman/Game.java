@@ -1,13 +1,39 @@
 package com.example.ruich.pacman;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 
-public class Game extends AppCompatActivity {
+public class Game {
+    static final int BEANSROW = 5;
+    static final int BEANSCOL = 5;
+    static final float SCALEYUP = 1.0f - (1.0f - BEANSROW * (1.0f / (BEANSCOL+1))/2.0f);
+    static final float SCALEYDOWN = 1.0f - BEANSROW * (1.0f / (BEANSCOL+1))/2;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.game);
+    private Enemies enemies;
+    private Pac pac;
+    private Beans beans;
+
+    private boolean eaten;
+
+    public Game(){
+        this.pac = new Pac();
+
+    }
+
+    public void touch(float xpos, float ypos) {
+    }
+
+    public void draw(Canvas canvas, Paint paint) {
+    }
+
+    public void step() {
+    }
+
+    public boolean hasWon() {
+        return false;
+    }
+
+    public boolean shipHit() {
+        return false;
     }
 }

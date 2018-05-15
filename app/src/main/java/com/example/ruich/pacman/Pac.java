@@ -5,8 +5,8 @@ import android.graphics.Paint;
 
 public class Pac extends Sprite {
     public static final float STARTX = 0.5f;
-    public static final float STARTY = 0.5f;
-    public static final float PACRADIUS = (1.0f / 12.0f);
+    public static final float STARTY = 0.4167f;
+    public static final float PACRADIUS = (1.0f / 16.0f);
     public Pac(){
         pos = new Pos(STARTX,STARTY);
     }

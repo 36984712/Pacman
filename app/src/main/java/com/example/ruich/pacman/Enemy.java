@@ -4,7 +4,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 
 public class Enemy extends Sprite {
-    public static final float ENEMYRADIUS = (1.0f / 15.0f);
+    public static final float ENEMYRADIUS = (1.0f / 20.0f);
 
     public Enemy(Pos p) {
         pos = new Pos(p);

@@ -24,4 +24,9 @@ public class Pos {
         float dy = y - p.y;
         return (float) Math.sqrt(dx*dx + dy*dy);
     }
+
+    @Override
+    public String toString() {
+        return x + " " + y;
+    }
 }

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class PacmanView extends View implements View.OnTouchListener , Runnable {
 
-    public static final int STEPDELAY = 100;
+    public static final int STEPDELAY = 800;
     public static final int DEFAULTCOLOUR = Color.BLACK;
     public static final float DEFAULTPENWIDTH = 3.0f;
     Paint paint;
@@ -62,7 +62,7 @@ public class PacmanView extends View implements View.OnTouchListener , Runnable 
 
     public boolean step() {
         game.step();
-        if (game.hasWon() || game.shipHit()) {
+        if (game.hasWon() || game.eaten()) {
             notifyGameOver();
             return false;
         }

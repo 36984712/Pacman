@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import java.util.ArrayList;
 
 public class Bean extends Sprite {
-    public static final float BEANRADIUS = (1.0f / 18.0f);
+    public static final float BEANRADIUS = (1.0f / 36.0f);
 
     public Bean(float x, float y) {
         this.pos = new Pos(x,y);
@@ -26,13 +26,13 @@ public class Bean extends Sprite {
     // determine if the bean be eaten
     public boolean beEaten(Enemies enemies) {
         for (Sprite e : enemies) {
-            if (e.pos.distance(pos) < 1.0f/6.0f) return true;
+            if (e.pos.distance(pos) < 1.0f/36.0f) return true;
         }
         return false;
     }
 
     public boolean beEatenP(Pac pac) {
-        if (pac.pos.distance(pos) < 1.0f/6.0f) return true;
+        if (pac.pos.distance(pos) < 1.0f/36.0f) return true;
         return false;
     }
 }

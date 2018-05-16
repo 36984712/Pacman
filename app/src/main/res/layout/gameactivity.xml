@@ -8,4 +8,37 @@
         android:id="@+id/pacmanview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/right"
+        android:layout_toStartOf="@+id/up"
+        android:text="L" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_toEndOf="@+id/up"
+        android:text="R" />
+
+    <Button
+        android:id="@+id/up"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/down"
+        android:layout_centerHorizontal="true"
+        android:text="up" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="down" />
 </RelativeLayout>

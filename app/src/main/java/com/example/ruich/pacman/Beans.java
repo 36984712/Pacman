@@ -20,8 +20,8 @@ public class Beans extends ArrayList<Bean> {
             }
         }
         String l = res.get(0).pos.toString();
-        Log.w(TAG, l );
-        Log.w(TAG, ""+res.size() );
+        //Log.w(TAG, l );
+        //Log.w(TAG, ""+res.size() );
         return res;
     }
 

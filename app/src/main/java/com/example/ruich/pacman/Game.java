@@ -51,7 +51,7 @@ public class Game {
         //enemies.step();
         beans.removeHit(enemies);
         beans.removeHitP(pac);
-        Log.w(TAG, beans.size()+"");
+        //Log.w(TAG, beans.size()+"");
         for (Enemy e : enemies) {
             if (pac.hitby(e)) eaten = true;
         }
@@ -91,6 +91,6 @@ public class Game {
                 moveAvailable = false;
             }
         }
-        Log.w(TAG, "x: " + pac.pos.x + "y: " + pac.pos.y);
+        Log.w(TAG, "x: " + pac.pos.x + "  y: " + pac.pos.y);
     }
 }

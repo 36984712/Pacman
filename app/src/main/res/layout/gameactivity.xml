@@ -14,9 +14,9 @@
         android:layout_width="100dp"
         android:layout_height="80dp"
         android:layout_alignTop="@+id/right"
-        android:layout_toStartOf="@+id/up"
+        android:layout_toStartOf="@id/up"
         android:layout_toLeftOf="@id/up"
-        android:text="L" />
+        android:text="LEFT" />
 
     <Button
         android:id="@+id/right"
@@ -24,15 +24,15 @@
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="22dp"
-        android:layout_toEndOf="@+id/up"
+        android:layout_toEndOf="@id/up"
         android:layout_toRightOf="@id/up"
-        android:text="R" />
+        android:text="RIGHT" />
 
     <Button
         android:id="@+id/up"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_above="@+id/down"
+        android:layout_above="@id/down"
         android:layout_centerHorizontal="true"
         android:text="up" />
 

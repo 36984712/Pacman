@@ -73,4 +73,8 @@ public class PacmanView extends View implements View.OnTouchListener , Runnable 
     private void notifyGameOver() {
         for (GameOver o : observers) o.gameOver();
     }
+
+    public void pacMove(String movement) {
+        game.pacMove(movement);
+    }
 }

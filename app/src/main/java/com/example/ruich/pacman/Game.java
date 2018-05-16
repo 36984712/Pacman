@@ -93,4 +93,35 @@ public class Game {
 //        }
 //        Log.w(TAG, "x: " + pac.pos.x + "  y: " + pac.pos.y);
     }
+
+    public void pacMove(String movement) {
+        switch (movement){
+            case "up":{
+                if (pac.pos.y - STEP >= STEP/2) {
+                    pac.pos.y -= STEP;
+                }
+                Log.w(TAG, "pacMove: " + (pac.pos.y - STEP) + " step " + STEP);
+                break;
+            }
+            case "down":{
+
+                if (pac.pos.y + STEP < (1.0f - STEP)){
+                    pac.pos.y += STEP;
+                }
+                break;
+            }
+            case "left":{
+                if (pac.pos.x - STEP >= STEP/2){
+                    pac.pos.x -= STEP;
+                }
+                break;
+            }
+            case "right":{
+                if (pac.pos.x + STEP <= (1.0f - STEP/2)){
+                    pac.pos.x += STEP;
+                }
+                break;
+            }
+        }
+    }
 }

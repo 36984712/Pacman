@@ -19,7 +19,7 @@ public class Game {
     private Pac pac;
     private Beans beans;
     private Pos estart = new Pos(0.167f, 0.083f);
-    //private boolean moveAvailable = true;
+    private boolean moveAvailable;
 
     private boolean eaten;
 
@@ -27,6 +27,7 @@ public class Game {
         this.pac = new Pac();
         this.beans = Beans.gridBeans(BEANSCOL, BEANSROW);
         this.enemies = new Enemies();
+        this.moveAvailable = true;
     }
 
     public void draw(Canvas canvas, Paint paint) {
@@ -45,7 +46,7 @@ public class Game {
     }
 
     public void step() {
-        //moveAvailable = true;
+        moveAvailable = true;
         if (enemies.size() < NUMBEROFENEMIES)
             enemies.add(new Enemy(estart));
         //enemies.step();
@@ -95,6 +96,7 @@ public class Game {
     }
 
     public void pacMove(String movement) {
+        if (!moveAvailable) return;
         switch (movement){
             case "up":{
                 if (pac.pos.y - STEP >= STEP/2) {
@@ -123,5 +125,6 @@ public class Game {
                 break;
             }
         }
+        moveAvailable = false;
     }
 }

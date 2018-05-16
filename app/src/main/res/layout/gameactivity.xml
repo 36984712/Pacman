@@ -15,6 +15,7 @@
         android:layout_height="80dp"
         android:layout_alignTop="@+id/right"
         android:layout_toStartOf="@+id/up"
+        android:layout_toLeftOf="@id/up"
         android:text="L" />
 
     <Button
@@ -24,6 +25,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="22dp"
         android:layout_toEndOf="@+id/up"
+        android:layout_toRightOf="@id/up"
         android:text="R" />
 
     <Button

@@ -2,6 +2,7 @@ package com.example.ruich.pacman;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 
 public class GameActivity extends AppCompatActivity implements GameOver{
 
@@ -11,6 +12,8 @@ public class GameActivity extends AppCompatActivity implements GameOver{
         setContentView(R.layout.gameactivity);
         PacmanView pacmanView = (PacmanView) findViewById(R.id.pacmanview);
         pacmanView.registerGameOver(this);
+        Button left = (Button) findViewById(R.id.left);
+
     }
 
     @Override
